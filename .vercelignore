@@ -1,0 +1,9 @@
+# Prevent Vercel from triggering the heavy Python Serverless Runtime (>500MB)
+requirements.txt
+app.py
+generate_stlite.py
+modules/
+__pycache__/
+*.pyc
+.venv
+.streamlit/

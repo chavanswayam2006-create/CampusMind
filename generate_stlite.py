@@ -42,7 +42,7 @@ html_content = f"""<!DOCTYPE html>
   <script>
     const appFiles = {json_data};
     stlite.mount({{
-      requirements: ["scikit-fuzzy", "scikit-learn", "matplotlib", "pandas", "numpy"],
+      requirements: ["scikit-fuzzy", "scikit-learn", "matplotlib", "pandas", "numpy", "scipy"],
       entrypoint: "app.py",
       files: appFiles
     }}, document.getElementById("root"));
