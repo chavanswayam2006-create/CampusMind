@@ -2,6 +2,13 @@ import streamlit as st
 from pathlib import Path
 from modules import agent_rules, navigator, game_zone, comfort, insights
 
+# Vercel Serverless runtime compatibility exports
+def app(environ, start_response):
+    start_response("200 OK", [("Content-Type", "text/plain")])
+    return [b"CampusMind is running."]
+application = app
+handler = app
+
 st.set_page_config(
     page_title="CampusMind - AI Academic Assistant",
     page_icon="🎓",
