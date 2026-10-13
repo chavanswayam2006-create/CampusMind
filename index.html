@@ -116,7 +116,7 @@
       if (statusEl) statusEl.innerText = "Loading AI models & Streamlit runtime...";
 
       mount({
-        requirements: ["scikit-fuzzy", "scikit-learn", "matplotlib", "pandas", "numpy", "scipy"],
+        requirements: ["networkx", "scikit-fuzzy", "scikit-learn", "matplotlib", "pandas", "numpy", "scipy"],
         entrypoint: "app.py",
         files: appFiles
       }, document.getElementById("root"));
