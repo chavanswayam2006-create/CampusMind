@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+    color: #1E293B;
+}
+
+/* Background */
+.stApp {
+    background-color: #F4F7FB;
+}
+
+/* Header Banner */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 0rem 1.2rem 0rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.top-title {
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: #1E293B;
+    margin: 0;
+}
+
+.top-badge {
+    background: #EEF2FF;
+    color: #4F46E5;
+    border: 1px solid #C7D2FE;
+    padding: 0.35rem 0.8rem;
+    border-radius: 9999px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+/* Cards */
+.campus-card {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 1.35rem;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+    border: 1px solid #E2E8F0;
+    margin-bottom: 1.25rem;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0F172A;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card-subtitle {
+    font-size: 0.85rem;
+    color: #64748B;
+    margin-top: -0.4rem;
+    margin-bottom: 1rem;
+}
+
+/* PEAS Boxes */
+.peas-box {
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    padding: 1rem;
+    height: 100%;
+}
+
+.peas-label {
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #4F46E5;
+    margin-bottom: 0.35rem;
+}
+
+.peas-text {
+    font-size: 0.9rem;
+    color: #334155;
+    line-height: 1.45;
+}
+
+/* Chips and Badges */
+.chip {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 0.2rem 0.25rem 0.2rem 0;
+}
+
+.chip-green {
+    background: #DEF7EC;
+    color: #03543F;
+    border: 1px solid #BCF0DA;
+}
+
+.chip-red {
+    background: #FDE8E8;
+    color: #9B1C1C;
+    border: 1px solid #FBD5D5;
+}
+
+.chip-amber {
+    background: #FEF3C7;
+    color: #92400E;
+    border: 1px solid #FDE68A;
+}
+
+.chip-indigo {
+    background: #EEF2FF;
+    color: #4F46E5;
+    border: 1px solid #C7D2FE;
+}
+
+.chip-teal {
+    background: #CCFBF1;
+    color: #0F766E;
+    border: 1px solid #99F6E4;
+}
+
+.route-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 0.8rem 0;
+}
+
+.arrow-separator {
+    color: #94A3B8;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* Game boards */
+.tile-box {
+    background: #EEF2FF;
+    color: #4F46E5;
+    font-size: 1.35rem;
+    font-weight: 700;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 58px;
+    border: 1px solid #C7D2FE;
+}
+
+.tile-empty {
+    background: #F1F5F9;
+    border: 1px dashed #CBD5E1;
+    height: 58px;
+    border-radius: 8px;
+}
+
+/* Gauge Card */
+.gauge-card {
+    text-align: center;
+    padding: 1rem;
+    background: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%);
+    border-radius: 12px;
+    border: 1px solid #E2E8F0;
+}
+
+.gauge-val {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #4F46E5;
+}
+
+/* Streamlit Button Tweaks */
+div.stButton > button {
+    border-radius: 8px;
+    font-weight: 600;
+    border: 1px solid #E2E8F0;
+    transition: all 0.2s ease;
+}
+
+div.stButton > button:hover {
+    border-color: #4F46E5;
+    color: #4F46E5;
+}
+
+/* Primary Button */
+div.stButton > button[kind="primary"] {
+    background-color: #4F46E5;
+    color: white;
+    border: none;
+}
+div.stButton > button[kind="primary"]:hover {
+    background-color: #4338CA;
+    color: white;
+}
